@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include "searching.h"
+
 void display_list(int *list, int length)
 {
     for (int i = 0; i < length; i++)
@@ -43,6 +45,7 @@ void sort(int *list, int length, int type)
 
 int main()
 {
+
     int arr[5] = {
         1,
         3,
@@ -64,6 +67,8 @@ int main()
     printf("\n");
     printf("Descending Sort Result : ");
     display_list(arr, 5);
+
+    printf("Angka 3 berada pada index: %d\n", sequential_search(arr, 5, 3));
 
     return 0;
 }

@@ -1,0 +1,1 @@
+int sequential_search(int *arr, int arr_length, int target);
